@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Edge One-Hand Gestures</string>
+    <string name="service_label">Edge One-Hand Gestures</string>
+    <string name="service_description">Runs system actions (Back, Home, Recents, Lock screen, Notifications, Quick Settings, Screenshot) when you swipe from a screen edge, and hosts the thin edge touch strips. It does not read, store or send anything shown on your screen. This app is not an assistive technology; it uses this permission only to perform those system actions.</string>
+</resources>
