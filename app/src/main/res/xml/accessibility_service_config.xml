@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Minimal accessibility-service declaration.
+    - No accessibilityEventTypes: the service subscribes to NO events, so it receives nothing about
+      what is on screen. onAccessibilityEvent() is an intentional no-op.
+    - canRetrieveWindowContent=false: it cannot read other apps' content.
+    - isAccessibilityTool=false: this app is a system-gesture utility, not an assistive technology,
+      and says so honestly (attribute is honoured on Android 14+, ignored below).
+    The service is used only to (a) host the thin edge touch strips as accessibility overlay windows
+    and (b) call performGlobalAction() for Back / Home / Recents / Lock / etc.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:canRetrieveWindowContent="false"
+    android:description="@string/service_description"
+    android:isAccessibilityTool="false"
+    android:notificationTimeout="100"
+    android:settingsActivity="com.edgeone.gestures.ui.MainActivity" />
